@@ -1,0 +1,24 @@
+2025-09-26 11:52:52.269 +02:00 [INF] Registered 5 endpoints in 8.703 milliseconds.
+2025-09-26 11:53:00.538 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-26 11:53:01.062 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ProcessCells" AS "p")
+2025-09-26 11:53:01.933 +02:00 [INF] Now listening on: https://localhost:50743
+2025-09-26 11:53:02.026 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-26 11:53:02.785 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-26 11:53:02.786 +02:00 [INF] Hosting environment: Development
+2025-09-26 11:53:02.786 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-26 12:16:06.080 +02:00 [INF] Registered 6 endpoints in 4.945 milliseconds.
+2025-09-26 12:16:09.439 +02:00 [INF] Executed DbCommand (122ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-26 12:16:09.975 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ProcessCells" AS "p")
+2025-09-26 12:16:10.592 +02:00 [INF] Now listening on: https://localhost:50983
+2025-09-26 12:16:10.625 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-26 12:16:13.805 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-26 12:16:13.805 +02:00 [INF] Hosting environment: Development
+2025-09-26 12:16:13.805 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web

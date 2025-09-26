@@ -1,4 +1,5 @@
-﻿using FrontmatecTechTest.Core.ContributorAggregate;
+﻿using FrontmatecTechTest.Core;
+using FrontmatecTechTest.Core.ContributorAggregate;
 
 namespace FrontmatecTechTest.Infrastructure.Data;
 public class AppDbContext(DbContextOptions<AppDbContext> options,
@@ -7,6 +8,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options,
   private readonly IDomainEventDispatcher? _dispatcher = dispatcher;
 
   public DbSet<Contributor> Contributors => Set<Contributor>();
+  public DbSet<ProcessCell> ProcessCells => Set<ProcessCell>();
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {

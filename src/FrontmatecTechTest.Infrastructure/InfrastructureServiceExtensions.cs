@@ -1,5 +1,4 @@
 ﻿using FrontmatecTechTest.Core.Interfaces;
-using FrontmatecTechTest.Core.Services;
 using FrontmatecTechTest.Infrastructure.Data;
 using FrontmatecTechTest.Infrastructure.Data.Queries;
 using FrontmatecTechTest.UseCases.Contributors.List;
@@ -20,8 +19,8 @@ public static class InfrastructureServiceExtensions
 
     services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>))
            .AddScoped(typeof(IReadRepository<>), typeof(EfRepository<>))
-           .AddScoped<IListContributorsQueryService, ListContributorsQueryService>()
-           .AddScoped<IDeleteContributorService, DeleteContributorService>();
+           .AddScoped<IListContributorsQueryService, ListContributorsQueryService>();
+           //.AddScoped<IDeleteContributorService, DeleteContributorService>();
 
 
     logger.LogInformation("{Project} services registered", "Infrastructure");

@@ -1,4 +1,6 @@
-﻿using FrontmatecTechTest.UseCases.Contributors.Create;
+﻿using System.Data;
+using Microsoft.Data.Sqlite;
+using FrontmatecTechTest.UseCases.Contributors.Create;
 using FrontmatecTechTest.Web.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,10 +26,11 @@ builder.Services.AddFastEndpoints()
                 {
                   o.ShortSchemaNames = true;
                 })
-                .AddCommandMiddleware(c =>
-                {
-                  c.Register(typeof(CommandLogger<,>));
-                });
+                //.AddCommandMiddleware(c =>
+                //{
+                //  c.Register(typeof(CommandLogger<,>));
+                //})
+                ;
 
 // wire up commands
 //builder.Services.AddTransient<ICommandHandler<CreateContributorCommand2,Result<int>>, CreateContributorCommandHandler2>();

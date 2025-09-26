@@ -1,0 +1,1175 @@
+2025-09-18 12:00:22.127 +02:00 [INF] Registered 6 endpoints in 17.624 milliseconds.
+2025-09-18 12:00:53.438 +02:00 [INF] Executed DbCommand (446ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-09-18 12:00:53.868 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Contributors" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Contributors" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Status" INTEGER NOT NULL,
+    "PhoneNumber_CountryCode" TEXT NULL,
+    "PhoneNumber_Number" TEXT NULL,
+    "PhoneNumber_Extension" TEXT NULL
+);
+2025-09-18 12:00:55.844 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2025-09-18 12:00:56.517 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 7), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2025-09-18 12:00:56.555 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 8), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2025-09-18 12:01:03.717 +02:00 [INF] Now listening on: https://localhost:57424
+2025-09-18 12:01:03.891 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 12:01:05.401 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 12:01:05.402 +02:00 [INF] Hosting environment: Development
+2025-09-18 12:01:05.402 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 12:02:38.694 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57424/ProcessCell - null null
+2025-09-18 12:02:38.829 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:02:38.863 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:02:38.870 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57424/ProcessCell - 415 null null 202.4279ms
+2025-09-18 12:08:35.756 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57424/ProcessCell - application/json 260
+2025-09-18 12:08:35.758 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:08:35.954 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:08:35.954 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57424/ProcessCell - 400 null application/problem+json; charset=utf-8 198.6913ms
+2025-09-18 12:08:59.087 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57424/ProcessCell - application/json 260
+2025-09-18 12:08:59.088 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:08:59.093 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:08:59.094 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57424/ProcessCell - 400 null application/problem+json; charset=utf-8 6.3766ms
+2025-09-18 12:10:39.586 +02:00 [INF] Registered 6 endpoints in 1.144 milliseconds.
+2025-09-18 12:10:42.040 +02:00 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 12:10:42.567 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2025-09-18 12:10:43.215 +02:00 [INF] Now listening on: https://localhost:57509
+2025-09-18 12:10:43.240 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 12:10:43.418 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 12:10:43.418 +02:00 [INF] Hosting environment: Development
+2025-09-18 12:10:43.418 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 12:11:00.696 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57509/ProcessCell - application/json 260
+2025-09-18 12:11:00.794 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:11:00.896 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:11:00.899 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57509/ProcessCell - 400 null application/problem+json; charset=utf-8 215.0506ms
+2025-09-18 12:11:18.117 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57509/ProcessCell - application/json 260
+2025-09-18 12:11:18.118 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:11:18.125 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:11:18.126 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57509/ProcessCell - 400 null application/problem+json; charset=utf-8 8.6028ms
+2025-09-18 12:12:13.247 +02:00 [INF] Registered 6 endpoints in 941 milliseconds.
+2025-09-18 12:12:14.924 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 12:12:15.453 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2025-09-18 12:12:15.923 +02:00 [INF] Now listening on: https://localhost:57533
+2025-09-18 12:12:15.934 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 12:12:16.116 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 12:12:16.117 +02:00 [INF] Hosting environment: Development
+2025-09-18 12:12:16.117 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 12:12:43.175 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57533/ProcessCell - application/json 260
+2025-09-18 12:12:43.239 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:12:43.340 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:12:43.343 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57533/ProcessCell - 400 null application/problem+json; charset=utf-8 183.0278ms
+2025-09-18 12:13:26.052 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57533/ProcessCell - application/json 260
+2025-09-18 12:13:26.054 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:13:26.056 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:13:26.057 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57533/ProcessCell - 400 null application/problem+json; charset=utf-8 4.779ms
+2025-09-18 12:13:33.499 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57533/ProcessCell - application/json 260
+2025-09-18 12:13:33.500 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:13:33.506 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:13:33.506 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57533/ProcessCell - 400 null application/problem+json; charset=utf-8 7.3782ms
+2025-09-18 12:14:48.009 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57533/ProcessCell - application/json 260
+2025-09-18 12:14:48.009 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:14:48.017 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:14:48.018 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57533/ProcessCell - 400 null application/problem+json; charset=utf-8 9.4612ms
+2025-09-18 12:16:19.481 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57533/ProcessCell - application/json 260
+2025-09-18 12:16:19.482 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:16:19.484 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:16:19.484 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57533/ProcessCell - 400 null application/problem+json; charset=utf-8 3.2831ms
+2025-09-18 12:16:24.399 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57533/ProcessCell - application/json 260
+2025-09-18 12:16:24.399 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:16:24.401 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:16:24.401 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57533/ProcessCell - 400 null application/problem+json; charset=utf-8 2.6154ms
+2025-09-18 12:20:38.476 +02:00 [INF] Registered 6 endpoints in 1.339 milliseconds.
+2025-09-18 12:20:40.135 +02:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 12:20:40.778 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2025-09-18 12:20:41.334 +02:00 [INF] Now listening on: https://localhost:57657
+2025-09-18 12:20:41.341 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 12:20:41.485 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 12:20:41.485 +02:00 [INF] Hosting environment: Development
+2025-09-18 12:20:41.485 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 12:21:07.048 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57657/ProcessCell - application/json 260
+2025-09-18 12:21:07.131 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:21:07.276 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:21:07.279 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57657/ProcessCell - 400 null application/problem+json; charset=utf-8 245.289ms
+2025-09-18 12:22:03.203 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57657/ProcessCell - application/json 260
+2025-09-18 12:22:03.204 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:22:03.207 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:22:03.210 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57657/ProcessCell - 400 null application/problem+json; charset=utf-8 7.2164ms
+2025-09-18 12:27:43.976 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57657/ProcessCell - application/json 260
+2025-09-18 12:27:43.977 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:27:43.980 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:27:43.980 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57657/ProcessCell - 400 null application/problem+json; charset=utf-8 4.6472ms
+2025-09-18 12:27:52.011 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57657/ProcessCell - application/json 260
+2025-09-18 12:27:52.012 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:27:52.018 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:27:52.019 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57657/ProcessCell - 400 null application/problem+json; charset=utf-8 8.2133ms
+2025-09-18 12:30:21.970 +02:00 [INF] Registered 6 endpoints in 1.231 milliseconds.
+2025-09-18 12:30:23.718 +02:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 12:30:24.707 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2025-09-18 12:30:26.004 +02:00 [INF] Now listening on: https://localhost:57809
+2025-09-18 12:30:26.015 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 12:30:26.291 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 12:30:26.291 +02:00 [INF] Hosting environment: Development
+2025-09-18 12:30:26.291 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 12:30:36.485 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57809/ProcessCell - application/json 260
+2025-09-18 12:30:36.576 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:30:36.695 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:30:36.697 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57809/ProcessCell - 400 null application/problem+json; charset=utf-8 230.4785ms
+2025-09-18 12:32:11.819 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57809/ProcessCell - application/json 260
+2025-09-18 12:32:11.823 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:32:11.828 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:32:11.829 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57809/ProcessCell - 400 null application/problem+json; charset=utf-8 10.0251ms
+2025-09-18 12:33:13.626 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57809/ProcessCell - application/json 48
+2025-09-18 12:33:13.627 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:33:13.632 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:33:13.634 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57809/ProcessCell - 400 null application/problem+json; charset=utf-8 7.5612ms
+2025-09-18 12:33:43.534 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57809/ProcessCell - application/json 48
+2025-09-18 12:33:43.535 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:33:43.540 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:33:43.540 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:57809/ProcessCell - 400 null application/problem+json; charset=utf-8 6.0325ms
+2025-09-18 12:34:21.625 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57809/ProcessCell - application/json 164
+2025-09-18 12:34:21.626 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:34:21.690 +02:00 [INF] Handling CreateProcessCellCommand2
+2025-09-18 12:34:21.691 +02:00 [INF] Property Title : P110A1
+2025-09-18 12:34:21.691 +02:00 [INF] Property Uuid : 10000001abcd
+2025-09-18 12:34:21.692 +02:00 [INF] Property Status : Healthy
+2025-09-18 12:34:21.692 +02:00 [INF] Property IsActive : true
+2025-09-18 12:34:21.692 +02:00 [INF] Property Description : Skive pumpestation til bremser
+2025-09-18 12:34:21.693 +02:00 [INF] Property ProcessCellProperties : null
+2025-09-18 12:39:09.506 +02:00 [INF] Registered 6 endpoints in 1.296 milliseconds.
+2025-09-18 12:39:11.957 +02:00 [INF] Executed DbCommand (82ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 12:39:12.484 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2025-09-18 12:39:13.141 +02:00 [INF] Now listening on: https://localhost:57921
+2025-09-18 12:39:13.158 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 12:39:13.326 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 12:39:13.326 +02:00 [INF] Hosting environment: Development
+2025-09-18 12:39:13.326 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 12:39:38.202 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57921/ProcessCell - application/json 164
+2025-09-18 12:39:38.262 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:39:38.344 +02:00 [INF] Handling CreateProcessCellCommand2
+2025-09-18 12:39:38.346 +02:00 [INF] Property Title : P110A1
+2025-09-18 12:39:38.346 +02:00 [INF] Property Uuid : 10000001abcd
+2025-09-18 12:39:38.347 +02:00 [INF] Property Status : Healthy
+2025-09-18 12:39:38.347 +02:00 [INF] Property IsActive : true
+2025-09-18 12:39:38.349 +02:00 [INF] Property Description : Skive pumpestation til bremser
+2025-09-18 12:39:38.350 +02:00 [INF] Property ProcessCellProperties : null
+2025-09-18 12:43:09.230 +02:00 [INF] Registered 6 endpoints in 1.238 milliseconds.
+2025-09-18 12:43:10.746 +02:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 12:43:11.168 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2025-09-18 12:43:11.604 +02:00 [INF] Now listening on: https://localhost:57961
+2025-09-18 12:43:11.611 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 12:43:12.729 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 12:43:12.730 +02:00 [INF] Hosting environment: Development
+2025-09-18 12:43:12.730 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 12:43:26.366 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57961/ProcessCell - application/json 164
+2025-09-18 12:43:26.429 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:43:26.518 +02:00 [INF] Handling CreateProcessCellCommand2
+2025-09-18 12:43:26.520 +02:00 [INF] Property Title : P110A1
+2025-09-18 12:43:26.521 +02:00 [INF] Property Uuid : 10000001abcd
+2025-09-18 12:43:26.521 +02:00 [INF] Property Status : Healthy
+2025-09-18 12:43:26.521 +02:00 [INF] Property IsActive : true
+2025-09-18 12:43:26.522 +02:00 [INF] Property Description : Skive pumpestation til bremser
+2025-09-18 12:43:26.522 +02:00 [INF] Property ProcessCellProperties : null
+2025-09-18 12:45:04.549 +02:00 [INF] Registered 6 endpoints in 1.216 milliseconds.
+2025-09-18 12:45:06.082 +02:00 [ERR] An error occurred seeding the DB. The navigation 'ProcessCell.ProcessCellProperties' must be configured in 'OnModelCreating' with an explicit name for the target shared-type entity type, or excluded by calling 'EntityTypeBuilder.Ignore'.
+System.InvalidOperationException: The navigation 'ProcessCell.ProcessCellProperties' must be configured in 'OnModelCreating' with an explicit name for the target shared-type entity type, or excluded by calling 'EntityTypeBuilder.Ignore'.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.<ValidatePropertyMapping>g__Validate|7_0(IConventionTypeBase typeBase, <>c__DisplayClass7_0&)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidatePropertyMapping(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Sqlite.Infrastructure.Internal.SqliteModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreatedAsync(CancellationToken cancellationToken)
+   at FrontmatecTechTest.Web.Configurations.MiddlewareConfig.SeedDatabase(WebApplication app) in C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web\Configurations\MiddlewareConfig.cs:line 40
+2025-09-18 12:45:06.911 +02:00 [INF] Now listening on: https://localhost:57999
+2025-09-18 12:45:06.918 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 12:45:07.035 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 12:45:07.036 +02:00 [INF] Hosting environment: Development
+2025-09-18 12:45:07.036 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 12:45:15.800 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:57999/ProcessCell - application/json 164
+2025-09-18 12:45:15.864 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:45:15.949 +02:00 [INF] Handling CreateProcessCellCommand2
+2025-09-18 12:45:15.951 +02:00 [INF] Property Title : P110A1
+2025-09-18 12:45:15.952 +02:00 [INF] Property Uuid : 10000001abcd
+2025-09-18 12:45:15.952 +02:00 [INF] Property Status : Healthy
+2025-09-18 12:45:15.953 +02:00 [INF] Property IsActive : true
+2025-09-18 12:45:15.954 +02:00 [INF] Property Description : Skive pumpestation til bremser
+2025-09-18 12:45:15.954 +02:00 [INF] Property ProcessCellProperties : null
+2025-09-18 12:48:05.989 +02:00 [INF] Registered 6 endpoints in 1.168 milliseconds.
+2025-09-18 12:48:07.449 +02:00 [ERR] An error occurred seeding the DB. Unable to determine the relationship represented by navigation 'ProcessCell.ProcessCellProperties' of type 'Dictionary<string, string>'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+System.InvalidOperationException: Unable to determine the relationship represented by navigation 'ProcessCell.ProcessCellProperties' of type 'Dictionary<string, string>'. Either manually configure the relationship, or ignore this property using the '[NotMapped]' attribute or by using 'EntityTypeBuilder.Ignore' in 'OnModelCreating'.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.<ValidatePropertyMapping>g__Validate|7_0(IConventionTypeBase typeBase, <>c__DisplayClass7_0&)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidatePropertyMapping(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Sqlite.Infrastructure.Internal.SqliteModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreatedAsync(CancellationToken cancellationToken)
+   at FrontmatecTechTest.Web.Configurations.MiddlewareConfig.SeedDatabase(WebApplication app) in C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web\Configurations\MiddlewareConfig.cs:line 40
+2025-09-18 12:48:07.955 +02:00 [INF] Now listening on: https://localhost:58054
+2025-09-18 12:48:07.964 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 12:48:08.095 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 12:48:08.095 +02:00 [INF] Hosting environment: Development
+2025-09-18 12:48:08.095 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 12:48:18.338 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58054/ProcessCell - application/json 164
+2025-09-18 12:48:18.399 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 12:48:18.484 +02:00 [INF] Handling CreateProcessCellCommand2
+2025-09-18 12:48:18.485 +02:00 [INF] Property Title : P110A1
+2025-09-18 12:48:18.486 +02:00 [INF] Property Uuid : 10000001abcd
+2025-09-18 12:48:18.487 +02:00 [INF] Property Status : Healthy
+2025-09-18 12:48:18.487 +02:00 [INF] Property IsActive : true
+2025-09-18 12:48:18.488 +02:00 [INF] Property Description : Skive pumpestation til bremser
+2025-09-18 12:48:18.488 +02:00 [INF] Property ProcessCellProperties : null
+2025-09-18 12:59:49.799 +02:00 [INF] Registered 6 endpoints in 2.323 milliseconds.
+2025-09-18 12:59:53.450 +02:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 12:59:54.013 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2025-09-18 12:59:54.855 +02:00 [INF] Now listening on: https://localhost:58214
+2025-09-18 12:59:54.864 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 12:59:55.107 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 12:59:55.107 +02:00 [INF] Hosting environment: Development
+2025-09-18 12:59:55.107 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 13:00:00.236 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58214/ProcessCell - application/json 164
+2025-09-18 13:00:00.308 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 13:00:00.528 +02:00 [INF] Handling CreateProcessCellCommand2
+2025-09-18 13:00:00.529 +02:00 [INF] Property Title : P110A1
+2025-09-18 13:00:00.530 +02:00 [INF] Property Uuid : 10000001abcd
+2025-09-18 13:00:00.530 +02:00 [INF] Property Status : Healthy
+2025-09-18 13:00:00.531 +02:00 [INF] Property IsActive : true
+2025-09-18 13:00:00.531 +02:00 [INF] Property Description : Skive pumpestation til bremser
+2025-09-18 13:00:00.532 +02:00 [INF] Property ProcessCellProperties : null
+2025-09-18 13:00:00.890 +02:00 [ERR] Failed executing DbCommand (44ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 13:00:00.946 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'FrontmatecTechTest.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-18 13:33:58.332 +02:00 [INF] Registered 6 endpoints in 1.875 milliseconds.
+2025-09-18 13:34:00.387 +02:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 13:34:00.796 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2025-09-18 13:34:01.208 +02:00 [INF] Now listening on: https://localhost:58291
+2025-09-18 13:34:01.230 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 13:34:01.342 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 13:34:01.342 +02:00 [INF] Hosting environment: Development
+2025-09-18 13:34:01.342 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 13:34:21.644 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58291/ProcessCell - application/json 164
+2025-09-18 13:34:21.708 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 13:34:21.820 +02:00 [INF] Handling CreateProcessCellCommand2
+2025-09-18 13:34:21.821 +02:00 [INF] Property Title : P110A1
+2025-09-18 13:34:21.822 +02:00 [INF] Property Uuid : 10000001abcd
+2025-09-18 13:34:21.822 +02:00 [INF] Property Status : Healthy
+2025-09-18 13:34:21.822 +02:00 [INF] Property IsActive : true
+2025-09-18 13:34:21.823 +02:00 [INF] Property Description : Skive pumpestation til bremser
+2025-09-18 13:34:21.824 +02:00 [INF] Property ProcessCellProperties : null
+2025-09-18 13:34:22.038 +02:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 13:34:22.065 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'FrontmatecTechTest.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-18 13:50:26.804 +02:00 [INF] Registered 6 endpoints in 1.863 milliseconds.
+2025-09-18 13:50:29.796 +02:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 13:50:30.213 +02:00 [ERR] Failed executing DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ProcessCells" AS "p")
+2025-09-18 13:50:30.269 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'FrontmatecTechTest.Infrastructure.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-09-18 13:50:30.714 +02:00 [ERR] An error occurred seeding the DB. SQLite Error 1: 'no such table: ProcessCells'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at FrontmatecTechTest.Infrastructure.Data.SeedData.InitializeAsync(AppDbContext dbContext) in C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Infrastructure\Data\SeedData.cs:line 12
+   at FrontmatecTechTest.Web.Configurations.MiddlewareConfig.SeedDatabase(WebApplication app) in C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web\Configurations\MiddlewareConfig.cs:line 41
+2025-09-18 13:50:31.210 +02:00 [INF] Now listening on: https://localhost:58398
+2025-09-18 13:50:31.217 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 13:50:31.367 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 13:50:31.367 +02:00 [INF] Hosting environment: Development
+2025-09-18 13:50:31.367 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 13:50:53.071 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58398/ProcessCell - application/json 164
+2025-09-18 13:50:53.159 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 13:50:53.319 +02:00 [INF] Handling CreateProcessCellCommand2
+2025-09-18 13:50:53.320 +02:00 [INF] Property Title : P110A1
+2025-09-18 13:50:53.321 +02:00 [INF] Property Uuid : 10000001abcd
+2025-09-18 13:50:53.321 +02:00 [INF] Property Status : Healthy
+2025-09-18 13:50:53.321 +02:00 [INF] Property IsActive : true
+2025-09-18 13:50:53.322 +02:00 [INF] Property Description : Skive pumpestation til bremser
+2025-09-18 13:50:53.322 +02:00 [INF] Property ProcessCellProperties : null
+2025-09-18 13:50:53.574 +02:00 [ERR] Failed executing DbCommand (9ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 13:50:53.588 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'FrontmatecTechTest.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-18 15:10:14.643 +02:00 [INF] Registered 5 endpoints in 4.470 milliseconds.
+2025-09-18 15:10:17.886 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 15:10:18.282 +02:00 [ERR] Failed executing DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ProcessCells" AS "p")
+2025-09-18 15:10:18.314 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'FrontmatecTechTest.Infrastructure.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-09-18 15:10:19.174 +02:00 [ERR] An error occurred seeding the DB. SQLite Error 1: 'no such table: ProcessCells'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at FrontmatecTechTest.Infrastructure.Data.SeedData.InitializeAsync(AppDbContext dbContext) in C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Infrastructure\Data\SeedData.cs:line 12
+   at FrontmatecTechTest.Web.Configurations.MiddlewareConfig.SeedDatabase(WebApplication app) in C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web\Configurations\MiddlewareConfig.cs:line 41
+2025-09-18 15:10:19.808 +02:00 [INF] Now listening on: https://localhost:58637
+2025-09-18 15:10:19.831 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 15:10:20.013 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 15:10:20.013 +02:00 [INF] Hosting environment: Development
+2025-09-18 15:10:20.013 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 15:10:27.088 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58637/ProcessCell - application/json 164
+2025-09-18 15:10:27.156 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:10:27.494 +02:00 [ERR] Failed executing DbCommand (8ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 15:10:27.502 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'FrontmatecTechTest.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: ProcessCells'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-18 15:16:34.924 +02:00 [INF] Registered 5 endpoints in 3.421 milliseconds.
+2025-09-18 15:16:37.209 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 15:16:37.883 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ProcessCells" AS "p")
+2025-09-18 15:16:39.053 +02:00 [INF] Now listening on: https://localhost:58735
+2025-09-18 15:16:39.060 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 15:16:39.294 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 15:16:39.294 +02:00 [INF] Hosting environment: Development
+2025-09-18 15:16:39.294 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 15:16:45.593 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58735/ProcessCell - application/json 164
+2025-09-18 15:16:45.643 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:16:45.901 +02:00 [ERR] Failed executing DbCommand (23ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 15:16:45.924 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'FrontmatecTechTest.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'table ProcessCells has no column named UpdatedAt'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'table ProcessCells has no column named UpdatedAt'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-18 15:17:46.388 +02:00 [INF] Registered 5 endpoints in 1.126 milliseconds.
+2025-09-18 15:17:47.626 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 15:17:48.024 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ProcessCells" AS "p")
+2025-09-18 15:17:48.706 +02:00 [INF] Now listening on: https://localhost:58765
+2025-09-18 15:17:48.714 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 15:17:49.866 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 15:17:49.866 +02:00 [INF] Hosting environment: Development
+2025-09-18 15:17:49.867 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 15:17:57.788 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58765/ProcessCell - application/json 164
+2025-09-18 15:17:57.835 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:17:58.226 +02:00 [INF] Executed DbCommand (44ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 15:17:58.397 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:17:58.403 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:58765/ProcessCell - 200 null application/json; charset=utf-8 625.2565ms
+2025-09-18 15:18:01.281 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58765/ProcessCell - application/json 164
+2025-09-18 15:18:01.282 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:18:01.357 +02:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 15:18:01.379 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'FrontmatecTechTest.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: ProcessCells.Uuid'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: ProcessCells.Uuid'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-18 15:27:46.574 +02:00 [INF] Registered 5 endpoints in 666 milliseconds.
+2025-09-18 15:27:47.884 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 15:27:48.359 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ProcessCells" AS "p")
+2025-09-18 15:27:49.057 +02:00 [INF] Now listening on: https://localhost:58877
+2025-09-18 15:27:49.070 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 15:27:49.199 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 15:27:49.199 +02:00 [INF] Hosting environment: Development
+2025-09-18 15:27:49.199 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 15:28:41.791 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58877/ProcessCell - application/json 164
+2025-09-18 15:28:41.840 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:28:42.189 +02:00 [ERR] Failed executing DbCommand (8ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 15:28:42.212 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'FrontmatecTechTest.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: ProcessCells.Uuid'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: ProcessCells.Uuid'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-18 15:29:46.598 +02:00 [INF] Registered 5 endpoints in 690 milliseconds.
+2025-09-18 15:29:47.942 +02:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 15:29:48.299 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ProcessCells" AS "p")
+2025-09-18 15:29:48.714 +02:00 [INF] Now listening on: https://localhost:58915
+2025-09-18 15:29:48.726 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 15:29:48.873 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 15:29:48.873 +02:00 [INF] Hosting environment: Development
+2025-09-18 15:29:48.873 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 15:30:03.366 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58915/ProcessCell - application/json 164
+2025-09-18 15:30:03.422 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:30:03.670 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 15:30:03.737 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:30:03.743 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:58915/ProcessCell - 200 null application/json; charset=utf-8 387.628ms
+2025-09-18 15:38:19.404 +02:00 [INF] Registered 5 endpoints in 895 milliseconds.
+2025-09-18 15:38:21.000 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 15:38:21.378 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ProcessCells" AS "p")
+2025-09-18 15:38:21.746 +02:00 [INF] Now listening on: https://localhost:58973
+2025-09-18 15:38:21.756 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 15:38:21.867 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 15:38:21.867 +02:00 [INF] Hosting environment: Development
+2025-09-18 15:38:21.867 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 15:38:44.725 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58973/ProcessCell - application/json 164
+2025-09-18 15:38:44.775 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:38:45.082 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 15:38:45.146 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:38:45.152 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:58973/ProcessCell - 200 null application/json; charset=utf-8 438.6899ms
+2025-09-18 15:39:47.479 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58973/ProcessCell - application/json 220
+2025-09-18 15:39:47.480 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:39:47.532 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:39:47.532 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:58973/ProcessCell - 400 null application/problem+json; charset=utf-8 53.4664ms
+2025-09-18 15:40:40.025 +02:00 [INF] Registered 5 endpoints in 821 milliseconds.
+2025-09-18 15:40:41.253 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 15:40:41.590 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ProcessCells" AS "p")
+2025-09-18 15:40:42.011 +02:00 [INF] Now listening on: https://localhost:58997
+2025-09-18 15:40:42.020 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 15:40:42.137 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 15:40:42.137 +02:00 [INF] Hosting environment: Development
+2025-09-18 15:40:42.137 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
+2025-09-18 15:40:53.369 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58997/ProcessCell - application/json 220
+2025-09-18 15:40:53.417 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:41:43.356 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:41:43.359 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'key')
+   at Ardalis.GuardClauses.GuardClauseExtensions.Null[T](IGuardClause guardClause, T input, String parameterName, String message, Func`1 exceptionCreator)
+   at Ardalis.GuardClauses.GuardClauseExtensions.NullOrEmpty(IGuardClause guardClause, String input, String parameterName, String message, Func`1 exceptionCreator)
+   at FrontmatecTechTest.Core.ProcessCellProperty..ctor(String key, String value) in C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Core\ProcessCellProperty.cs:line 10
+   at .ctor(String, String, Object, Object)
+   at System.Text.Json.Serialization.Converters.SmallObjectWithParameterizedConstructorConverter`5.CreateObject(ReadStackFrame& frame)
+   at System.Text.Json.Serialization.Converters.ObjectWithParameterizedConstructorConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, Type type, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, Type type, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at FastEndpoints.RequestBinder`1.BindJsonBody(HttpRequest httpRequest, JsonSerializerContext serializerCtx, CancellationToken ct)
+   at FastEndpoints.RequestBinder`1.BindAsync(BinderContext ctx, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.BindRequestAsync(EndpointDefinition def, HttpContext ctx, List`1 failures, CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-18 15:41:43.477 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:58997/ProcessCell - 500 null text/plain; charset=utf-8 50118.115ms
+2025-09-18 15:42:09.618 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58997/ProcessCell - application/json 247
+2025-09-18 15:42:09.619 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:42:09.656 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:42:09.657 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:58997/ProcessCell - 400 null application/problem+json; charset=utf-8 39.0493ms
+2025-09-18 15:42:14.788 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58997/ProcessCell - application/json 248
+2025-09-18 15:42:14.788 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:42:15.045 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 15:42:15.131 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:42:15.136 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:58997/ProcessCell - 200 null application/json; charset=utf-8 347.8403ms
+2025-09-18 15:42:28.388 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58997/ProcessCell - application/json 248
+2025-09-18 15:42:28.388 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:42:28.462 +02:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 15:42:28.473 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'FrontmatecTechTest.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: ProcessCells.Uuid'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: ProcessCells.Uuid'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-18 15:42:31.253 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:42:31.255 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: ProcessCells.Uuid'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FrontmatecTechTest.Infrastructure.Data.AppDbContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Infrastructure\Data\AppDbContext.cs:line 21
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.SaveChangesAsync(CancellationToken cancellationToken)
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.AddAsync(T entity, CancellationToken cancellationToken)
+   at FrontmatecTechTest.UseCases.Contributors.Create.CreateProcessCellHandler2.ExecuteAsync(CreateProcessCellCommand2 request, CancellationToken cancellationToken) in C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.UseCases\CreateProcessCellCommand.cs:line 33
+   at FrontmatecTechTest.Web.Contributors.CreateProcessCellEndpoint.HandleAsync(CreateProcessCellRequest request, CancellationToken cancellationToken) in C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web\CreateProcessCellEndpoint.cs:line 30
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-18 15:42:31.306 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:58997/ProcessCell - 500 null text/plain; charset=utf-8 2918.0559ms
+2025-09-18 15:48:35.219 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58997/ProcessCell - application/json 248
+2025-09-18 15:48:35.219 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:48:35.243 +02:00 [ERR] Failed executing DbCommand (18ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 15:48:35.246 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'FrontmatecTechTest.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: ProcessCells.Uuid'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: ProcessCells.Uuid'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-18 15:48:41.881 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:48:41.881 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: ProcessCells.Uuid'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FrontmatecTechTest.Infrastructure.Data.AppDbContext.SaveChangesAsync(CancellationToken cancellationToken) in C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Infrastructure\Data\AppDbContext.cs:line 21
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.SaveChangesAsync(CancellationToken cancellationToken)
+   at Ardalis.Specification.EntityFrameworkCore.RepositoryBase`1.AddAsync(T entity, CancellationToken cancellationToken)
+   at FrontmatecTechTest.UseCases.Contributors.Create.CreateProcessCellHandler2.ExecuteAsync(CreateProcessCellCommand2 request, CancellationToken cancellationToken) in C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.UseCases\CreateProcessCellCommand.cs:line 33
+   at FrontmatecTechTest.Web.Contributors.CreateProcessCellEndpoint.HandleAsync(CreateProcessCellRequest request, CancellationToken cancellationToken) in C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web\CreateProcessCellEndpoint.cs:line 30
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at FastEndpoints.Endpoint`2.ExecAsync(CancellationToken ct)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Ardalis.ListStartupServices.ShowAllServicesMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-18 15:48:41.890 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:58997/ProcessCell - 500 null text/plain; charset=utf-8 6671.646ms
+2025-09-18 15:48:47.730 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58997/ProcessCell - application/json 248
+2025-09-18 15:48:47.731 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:48:47.734 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 15:48:47.757 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:48:47.757 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:58997/ProcessCell - 200 null application/json; charset=utf-8 27.3734ms
+2025-09-18 15:49:10.962 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:58997/ProcessCell - application/json 248
+2025-09-18 15:49:10.963 +02:00 [INF] Executing endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:49:10.966 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (DbType = Boolean), @p2='?' (Size = 7), @p3='?' (Size = 6), @p4='?' (DbType = DateTime), @p5='?' (Size = 12)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ProcessCells" ("Description", "IsActive", "Status", "Title", "UpdatedAt", "Uuid")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2025-09-18 15:49:10.983 +02:00 [INF] Executed endpoint 'HTTP: POST /ProcessCell'
+2025-09-18 15:49:10.983 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:58997/ProcessCell - 200 null application/json; charset=utf-8 20.4978ms
+2025-09-18 17:19:14.902 +02:00 [INF] Registered 5 endpoints in 1.942 milliseconds.
+2025-09-18 17:19:17.929 +02:00 [INF] Executed DbCommand (110ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-09-18 17:19:18.950 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ProcessCells" AS "p")
+2025-09-18 17:19:20.138 +02:00 [INF] Now listening on: https://localhost:59394
+2025-09-18 17:19:20.155 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-09-18 17:19:20.361 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 17:19:20.361 +02:00 [INF] Hosting environment: Development
+2025-09-18 17:19:20.361 +02:00 [INF] Content root path: C:\Users\Daniel\Projects\Frontmatec\FrontmatecTechTest\src\FrontmatecTechTest.Web
